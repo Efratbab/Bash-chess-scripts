@@ -10,14 +10,23 @@ This project demonstrates **Bash scripting, file parsing, error handling, and CL
 - **`split_pgn.sh`** – Splits a PGN file containing multiple chess games into separate files.  
 - **`chess_sim.sh`** – Simulates a chess game in the terminal using PGN input, with interactive navigation.  
 - **`parse_moves.py`** – Helper Python script that converts PGN moves into **UCI** (Universal Chess Interface) format.  
-- **`pgns/`** – Example PGN files used for testing.  
-- **`splited_pgn/`** – Example output folder with split PGN files.  
+- **`capmemel24.pgn`** – Example PGN file for testing.  
+- **`splited_pgn/`** – Example output folder with split PGN files (created automatically when you run the script).  
 
 ---
 
 ## ⚡ Quick Start
 
-### Clone the repository
-```bash
-git clone https://github.com/<your-username>/bash-chess-scripts.git
-cd bash-chess-scripts
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/<your-username>/bash-chess-scripts.git
+   cd bash-chess-scripts
+2. **Make scripts executable**
+   chmod +x split_pgn.sh
+   chmod +x chess_sim.sh
+3. **Install Python dependency**
+   pip install chess
+4. **Run the PGN Splitter**
+   ./split_pgn.sh capmemel24.pgn splited_pgn
+5. **Run the Chess Simulator**
+   ./chess_sim.sh splited_pgn/capmemel24_1.pgn
