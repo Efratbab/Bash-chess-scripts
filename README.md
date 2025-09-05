@@ -22,11 +22,15 @@ This project demonstrates **Bash scripting, file parsing, error handling, and CL
    git clone https://github.com/<your-username>/bash-chess-scripts.git
    cd bash-chess-scripts
 2. **Make scripts executable**
+    ```bash
    chmod +x split_pgn.sh
    chmod +x chess_sim.sh
 3. **Install Python dependency**
+   ```bash
    pip install chess
 4. **Run the PGN Splitter**
+   ```bash
    ./split_pgn.sh capmemel24.pgn splited_pgn
 5. **Run the Chess Simulator**
+   ```bash
    ./chess_sim.sh splited_pgn/capmemel24_1.pgn
